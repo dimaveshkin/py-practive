@@ -1,0 +1,88 @@
+  EQ Master Menu 
+     -01 EC Sales manager menu 
+         -01-10 EA Ordering menu 
+             -01-10-08 EN Promo stock level menu 
+             -01-10-08-09 BA Seasonal ordering menu 
+                 -01-10-08-09-32 BB Exclude from analyze seasonal ord 
+             -01-10-08-09-50 BK Ordering parameters menu 
+                 -01-10-08-09-50-30 ER Exclude from Analyze Promo Order 
+                 -01-10-08-09-50-30-31 EL Exclude from Analyze Placing Order 
+     -01-03 DD Computer operator menu 
+         -01-03-01 AA Frontend functions menu 
+         -01-03-01-02 AL Date control menu 
+         -01-03-01-02-04 AH Communications menu 
+             -01-03-01-02-04-15 BL List communication files menu 
+             -01-03-01-02-04-15-26 AI Display packets communication 
+         -01-03-01-02-04-05 DS Daily sales menu 
+         -01-03-01-02-04-05-08 AM Operating system commands menu 
+     -01-03-04 EA Ordering menu 
+         -01-03-04-08 EN Promo stock level menu 
+         -01-03-04-08-09 BA Seasonal ordering menu 
+             -01-03-04-08-09-32 BB Exclude from analyze seasonal ord 
+         -01-03-04-08-09-50 BK Ordering parameters menu 
+             -01-03-04-08-09-50-30 ER Exclude from Analyze Promo Order 
+             -01-03-04-08-09-50-30-31 EL Exclude from Analyze Placing Order 
+     -01-03-04-05 DK Shipping and receiving menu 
+     -01-03-04-05-06 DJ Customer returns menu 
+         -01-03-04-05-06-20 BZ Adjusta-Card menu 
+     -01-03-04-05-06-07 EE Product inventory menu 
+         -01-03-04-05-06-07-05 BS Price & env fee link changes menu 
+             -01-03-04-05-06-07-05-20 DB Signage menu 
+         -01-03-04-05-06-07-05-14 PL Product locations menu 
+     -01-03-04-05-06-07-08 DL Master files menu 
+     -01-03-04-05-06-07-08-09 DM Claims and settlements menu 
+     -01-03-04-05-06-07-08-09-10 EF Reports menu 
+     -01-03-04-05-06-07-08-09-10-11 DO Application parameters menu 
+         -01-03-04-05-06-07-08-09-10-11-20 BK Ordering parameters menu 
+             -01-03-04-05-06-07-08-09-10-11-20-30 ER Exclude from Analyze Promo Order 
+             -01-03-04-05-06-07-08-09-10-11-20-30-31 EL Exclude from Analyze Placing Order 
+         -01-03-04-05-06-07-08-09-10-11-20-21 EM PICKING MAIN MENU 
+     -01-03-04-05-06-07-08-09-10-11-13 CU Service centre menu 
+         -01-03-04-05-06-07-08-09-10-11-13-02 CV S/C file maintenance menu 
+         -01-03-04-05-06-07-08-09-10-11-13-02-03 CW Service centre reports menu 
+         -01-03-04-05-06-07-08-09-10-11-13-02-03-04 CX Service centre inquiry menu 
+         -01-03-04-05-06-07-08-09-10-11-13-02-03-04-05 CY Purchase order system 
+         -01-03-04-05-06-07-08-09-10-11-13-02-03-04-05-06 CZ Edit/post technician time sheets 
+         -01-03-04-05-06-07-08-09-10-11-13-02-03-04-05-06-08 DG Postcard program menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14 ED Inventory audit menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15 DE Radio frequency functions menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-01 DF Access radio frequency menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-01-10 PF RF Fast Find Menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-01-10-13 EX Express 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19 BY Manpower scheduling menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20 EB OSCAR accounting menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01 CF General ledger menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-07 CI Report writer menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-07-29 AP Year-end menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02 CD Accounts payable menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03 CE Accounts receivable menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03-05 BD Name and address menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03-05-06 AJ Cash balancing menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03-05-06-12 BF N.S.F. cheque menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03-05-06-12-14 CE Accounts receivable menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21 MS Multi-store menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22 EG STORE ANALYSIS MENU 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-01 EH ANALYZE MENU 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-01-02 EI FILE MAINTENANCE 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-01-02-03 EJ REPORTS MENU 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23 EK MERCHANDISING MENU 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24 EP Parts Counter Menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25 AQ APAP menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26 AB AIM menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01 AC Product selection menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-05 EG Store analysis menu 
+                 -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-05-01 EH ANALYZE MENU 
+                 -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-05-01-02 EI FILE MAINTENANCE 
+                 -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-05-01-02-03 EJ REPORTS MENU 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07 ES Signage menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08 BS Price changes menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-20 DB Signage menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-09 EG Store analysis menu 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-09-01 EH ANALYZE MENU 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-09-01-02 EI FILE MAINTENANCE 
+             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-09-01-02-03 EJ REPORTS MENU 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30 ES Signage menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30-33 PE Employee Purchase Menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30-33-40 PI Fast Find Menu 
+         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30-33-40-10 PF RF Fast Find Menu 
+     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30-33-40-41 RI Enhanced Reserve Inventory Menu 
