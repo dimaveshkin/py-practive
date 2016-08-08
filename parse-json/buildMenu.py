@@ -21,15 +21,19 @@ def build_tree_string(menu_id, title, indent_level, options, tree_trunk="", prog
     else:
         indent_str = ""
 
-    if program_name != "":
-        program_name = "| PROGRAM: " + program_name
-
     if menu_id != "":
         menu_id = " [" + menu_id + "] "
     else:
         menu_id = " "
 
-    return "{0} {1} {2}{3}{4} {5}\n".format(indent_str, tree_trunk, options, menu_id, title.strip(), program_name)[3:]
+    base_str = "{0} {1} {2}{3}{4}".format(indent_str, tree_trunk, options, menu_id, title.strip())[3:]
+
+    if program_name != "":
+        width = 70 - len(base_str)
+        program_name = "".rjust(width, ".") + ("| PROGRAM: " + program_name)
+        base_str = base_str + program_name
+
+    return base_str + "\n"
 
 
 def build_menu_tree(menu_list, menu_id="EQ", title="Master Menu", indent=0, options="", tree_trunk=""):
