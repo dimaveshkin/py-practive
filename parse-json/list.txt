@@ -1,88 +1,1081 @@
-  EQ Master Menu 
-     -01 EC Sales manager menu 
-         -01-10 EA Ordering menu 
-             -01-10-08 EN Promo stock level menu 
-             -01-10-08-09 BA Seasonal ordering menu 
-                 -01-10-08-09-32 BB Exclude from analyze seasonal ord 
-             -01-10-08-09-50 BK Ordering parameters menu 
-                 -01-10-08-09-50-30 ER Exclude from Analyze Promo Order 
-                 -01-10-08-09-50-30-31 EL Exclude from Analyze Placing Order 
-     -01-03 DD Computer operator menu 
-         -01-03-01 AA Frontend functions menu 
-         -01-03-01-02 AL Date control menu 
-         -01-03-01-02-04 AH Communications menu 
-             -01-03-01-02-04-15 BL List communication files menu 
-             -01-03-01-02-04-15-26 AI Display packets communication 
-         -01-03-01-02-04-05 DS Daily sales menu 
-         -01-03-01-02-04-05-08 AM Operating system commands menu 
-     -01-03-04 EA Ordering menu 
-         -01-03-04-08 EN Promo stock level menu 
-         -01-03-04-08-09 BA Seasonal ordering menu 
-             -01-03-04-08-09-32 BB Exclude from analyze seasonal ord 
-         -01-03-04-08-09-50 BK Ordering parameters menu 
-             -01-03-04-08-09-50-30 ER Exclude from Analyze Promo Order 
-             -01-03-04-08-09-50-30-31 EL Exclude from Analyze Placing Order 
-     -01-03-04-05 DK Shipping and receiving menu 
-     -01-03-04-05-06 DJ Customer returns menu 
-         -01-03-04-05-06-20 BZ Adjusta-Card menu 
-     -01-03-04-05-06-07 EE Product inventory menu 
-         -01-03-04-05-06-07-05 BS Price & env fee link changes menu 
-             -01-03-04-05-06-07-05-20 DB Signage menu 
-         -01-03-04-05-06-07-05-14 PL Product locations menu 
-     -01-03-04-05-06-07-08 DL Master files menu 
-     -01-03-04-05-06-07-08-09 DM Claims and settlements menu 
-     -01-03-04-05-06-07-08-09-10 EF Reports menu 
-     -01-03-04-05-06-07-08-09-10-11 DO Application parameters menu 
-         -01-03-04-05-06-07-08-09-10-11-20 BK Ordering parameters menu 
-             -01-03-04-05-06-07-08-09-10-11-20-30 ER Exclude from Analyze Promo Order 
-             -01-03-04-05-06-07-08-09-10-11-20-30-31 EL Exclude from Analyze Placing Order 
-         -01-03-04-05-06-07-08-09-10-11-20-21 EM PICKING MAIN MENU 
-     -01-03-04-05-06-07-08-09-10-11-13 CU Service centre menu 
-         -01-03-04-05-06-07-08-09-10-11-13-02 CV S/C file maintenance menu 
-         -01-03-04-05-06-07-08-09-10-11-13-02-03 CW Service centre reports menu 
-         -01-03-04-05-06-07-08-09-10-11-13-02-03-04 CX Service centre inquiry menu 
-         -01-03-04-05-06-07-08-09-10-11-13-02-03-04-05 CY Purchase order system 
-         -01-03-04-05-06-07-08-09-10-11-13-02-03-04-05-06 CZ Edit/post technician time sheets 
-         -01-03-04-05-06-07-08-09-10-11-13-02-03-04-05-06-08 DG Postcard program menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14 ED Inventory audit menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15 DE Radio frequency functions menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-01 DF Access radio frequency menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-01-10 PF RF Fast Find Menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-01-10-13 EX Express 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19 BY Manpower scheduling menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20 EB OSCAR accounting menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01 CF General ledger menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-07 CI Report writer menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-07-29 AP Year-end menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02 CD Accounts payable menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03 CE Accounts receivable menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03-05 BD Name and address menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03-05-06 AJ Cash balancing menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03-05-06-12 BF N.S.F. cheque menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-01-02-03-05-06-12-14 CE Accounts receivable menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21 MS Multi-store menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22 EG STORE ANALYSIS MENU 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-01 EH ANALYZE MENU 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-01-02 EI FILE MAINTENANCE 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-01-02-03 EJ REPORTS MENU 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23 EK MERCHANDISING MENU 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24 EP Parts Counter Menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25 AQ APAP menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26 AB AIM menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01 AC Product selection menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-05 EG Store analysis menu 
-                 -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-05-01 EH ANALYZE MENU 
-                 -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-05-01-02 EI FILE MAINTENANCE 
-                 -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-05-01-02-03 EJ REPORTS MENU 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07 ES Signage menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08 BS Price changes menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-20 DB Signage menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-09 EG Store analysis menu 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-09-01 EH ANALYZE MENU 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-09-01-02 EI FILE MAINTENANCE 
-             -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-01-07-08-09-01-02-03 EJ REPORTS MENU 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30 ES Signage menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30-33 PE Employee Purchase Menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30-33-40 PI Fast Find Menu 
-         -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30-33-40-10 PF RF Fast Find Menu 
-     -01-03-04-05-06-07-08-09-10-11-13-14-15-19-20-21-22-23-24-25-26-30-33-40-41 RI Enhanced Reserve Inventory Menu 
+[EQ] Master Menu 
+  ┝ 01 [EC] Sales manager menu 
+  ┃   ┝ 01-01 Inventory manager's inquiry | PROGRAM: imi
+  ┃   ┝ 01-02 Floor inquiry | PROGRAM: floorInquiry
+  ┃   ┝ 01-03 Sales so far today 
+  ┃   ┝ 01-04 Margin adjustments inquiry 
+  ┃   ┝ 01-09  
+  ┃   ┝ 01-10 [EA] Ordering menu 
+  ┃   ┃   ┝ 01-10-01 Calculate suggested reg. orders | PROGRAM: csro
+  ┃   ┃   ┝ 01-10-02 Work with orders | PROGRAM: workWithOrdersByPO
+  ┃   ┃   ┝ 01-10-03 Post orders to communications file | PROGRAM: postOrdersToCommunicationsFile
+  ┃   ┃   ┝ 01-10-05 Calculate suggested placing order 
+  ┃   ┃   ┝ 01-10-06 Work with deals | PROGRAM: dealManagement
+  ┃   ┃   ┝ 01-10-07 Work with automated promo updates 
+  ┃   ┃   ┝ 01-10-08 [EN] Promo stock level menu 
+  ┃   ┃   ┃   ┝ 01-10-08-01 Calc. promo order by cutoff 
+  ┃   ┃   ┃   ┝ 01-10-08-02 Work with orders by date run 
+  ┃   ┃   ┃   ┝ 01-10-08-03  
+  ┃   ┃   ┃   ┝ 01-10-08-04  
+  ┃   ┃   ┃   ┝ 01-10-08-05  
+  ┃   ┃   ┃   ┝ 01-10-08-06 Work with Deals 
+  ┃   ┃   ┃   ┝ 01-10-08-07 Work with auto. promo updates 
+  ┃   ┃   ┃   ┝ 01-10-08-08  
+  ┃   ┃   ┃   ┝ 01-10-08-09  
+  ┃   ┃   ┃   ┝ 01-10-08-10 Change promo SL parameters 
+  ┃   ┃   ┃   ┝ 01-10-08-11  
+  ┃   ┃   ┃   ┝ 01-10-08-12 Work with promo stock levels | PROGRAM: workWithPromoStockLevels
+  ┃   ┃   ┃   ┝ 01-10-08-13  
+  ┃   ┃   ┃   ┝ 01-10-08-14  
+  ┃   ┃   ┃   ┝ 01-10-08-15  
+  ┃   ┃   ┃   ┝ 01-10-08-30 Ww promo Analyze exclusion crit. 
+  ┃   ┃   ┃   ┝ 01-10-08-31 Ww promo automatic posting crit. 
+  ┃   ┃   ┃   ┝ 01-10-08-32 Ww promo stock level defaulting 
+  ┃   ┃   ┃   ┝ 01-10-08-33 Ww B2B promo SL multipliers | PROGRAM: workWithB2bPromoSlMultipliers
+  ┃   ┃   ┃   ┝ 01-10-08-34  
+  ┃   ┃   ┃   ┝ 01-10-08-40 Work with promo pre-deal 
+  ┃   ┃   ┃   ┕ 01-10-08-41 Set up promo pre-deal parameters 
+  ┃   ┃   ┝ 01-10-09 [BA] Seasonal ordering menu 
+  ┃   ┃   ┃   ┝ 01-10-09-01 Work with seasonal setup 
+  ┃   ┃   ┃   ┝ 01-10-09-02 Calculate suggested seasonal order 
+  ┃   ┃   ┃   ┝ 01-10-09-10 Work with seasonal store defaults 
+  ┃   ┃   ┃   ┝ 01-10-09-17 Print suggest. seasonal orders rpt 
+  ┃   ┃   ┃   ┕ 01-10-09-32 [BB] Exclude from analyze seasonal ord 
+  ┃   ┃   ┃   ┃   ┝ 01-10-09-32-01 Set up/change exclusion criteria 
+  ┃   ┃   ┃   ┃   ┝ 01-10-09-32-02 Recreate list of exclusions 
+  ┃   ┃   ┃   ┃   ┝ 01-10-09-32-03 Maintain list of exclusions 
+  ┃   ┃   ┃   ┃   ┕ 01-10-09-32-04 Turn exclusion criteria on/off 
+  ┃   ┃   ┝ 01-10-10 Work with management reports 
+  ┃   ┃   ┝ 01-10-11 Print suggested promo orders rpt 
+  ┃   ┃   ┝ 01-10-12 Print suggested placing orders rpt 
+  ┃   ┃   ┝ 01-10-13 Print standing orders report 
+  ┃   ┃   ┝ 01-10-14 Print automated promo upd. report 
+  ┃   ┃   ┝ 01-10-15 Print outstanding order report 
+  ┃   ┃   ┝ 01-10-16 Print detailed outstndg order rpt 
+  ┃   ┃   ┝ 01-10-20 Restore orders deleted by IONI 
+  ┃   ┃   ┝ 01-10-21 Work with floor messages 
+  ┃   ┃   ┝ 01-10-22 Work with in-store timed specials 
+  ┃   ┃   ┝ 01-10-29  
+  ┃   ┃   ┝ 01-10-30 Work with rain checks 
+  ┃   ┃   ┝ 01-10-40 Work with orders (multi-store) 
+  ┃   ┃   ┕ 01-10-50 [BK] Ordering parameters menu 
+  ┃   ┃   ┃   ┝ 01-10-50-01 Work with weeks of supply tables | PROGRAM: workWithWeeksOfSupplyTables
+  ┃   ┃   ┃   ┝ 01-10-50-02 Work with order parameters 
+  ┃   ┃   ┃   ┝ 01-10-50-03 Work with sales curves 
+  ┃   ┃   ┃   ┝ 01-10-50-04 Calculate sales curve factors 
+  ┃   ┃   ┃   ┝ 01-10-50-05 Calculate order pts & stock levels | PROGRAM: calculateOrderPointsAndStockLevels
+  ┃   ┃   ┃   ┝ 01-10-50-06 Work with minimum order points | PROGRAM: workWithMinOrderPoints
+  ┃   ┃   ┃   ┝ 01-10-50-07 Work with order analyze parameters | PROGRAM: workWithOrderAnalyzeParameters
+  ┃   ┃   ┃   ┝ 01-10-50-08 Assign store usage cd to hold cd 
+  ┃   ┃   ┃   ┝ 01-10-50-09  
+  ┃   ┃   ┃   ┝ 01-10-50-10 Placing global defaults 
+  ┃   ┃   ┃   ┝ 01-10-50-19  
+  ┃   ┃   ┃   ┝ 01-10-50-20 Transfer sales curves 
+  ┃   ┃   ┃   ┝ 01-10-50-21 Set sales curve to fineline 
+  ┃   ┃   ┃   ┝ 01-10-50-22 Work with excessive order limits | PROGRAM: workWithExcessiveOrderLimits
+  ┃   ┃   ┃   ┝ 01-10-50-29  
+  ┃   ┃   ┃   ┝ 01-10-50-30 [ER] Exclude from Analyze Promo Order 
+  ┃   ┃   ┃   ┃   ┝ 01-10-50-30-01 Set up/change exclusion criteria 
+  ┃   ┃   ┃   ┃   ┝ 01-10-50-30-02 Recreate list of exclusions 
+  ┃   ┃   ┃   ┃   ┝ 01-10-50-30-03 Maintain list of exclusions 
+  ┃   ┃   ┃   ┃   ┕ 01-10-50-30-04 Turn exclusion criteria on/off 
+  ┃   ┃   ┃   ┕ 01-10-50-31 [EL] Exclude from Analyze Placing Order 
+  ┃   ┃   ┃   ┃   ┝ 01-10-50-31-01 Set up/change exclusion criteria 
+  ┃   ┃   ┃   ┃   ┝ 01-10-50-31-02 Recreate list of exclusions 
+  ┃   ┃   ┃   ┃   ┝ 01-10-50-31-03 Maintain list of exclusions 
+  ┃   ┃   ┃   ┃   ┕ 01-10-50-31-04 Turn exclusion criteria on/off 
+  ┃   ┝ 01-11  
+  ┃   ┝ 01-20 Work with management reports 
+  ┃   ┝ 01-22 Cashier statistics 
+  ┃   ┝ 01-29  
+  ┃   ┕ 01-30 Send messages to people 
+  ┝ 03 [DD] Computer operator menu 
+  ┃   ┝ 03-01 [AA] Frontend functions menu 
+  ┃   ┃   ┝ 03-01-01 Generate a price lookup (PLU) file 
+  ┃   ┃   ┝ 03-01-02 Send a price lookup (PLU) file 
+  ┃   ┃   ┝ 03-01-03  
+  ┃   ┃   ┝ 03-01-07 Maintain cashier names 
+  ┃   ┃   ┝ 03-01-08 Maintain special cash register #s 
+  ┃   ┃   ┝ 03-01-10 Maintain special product numbers 
+  ┃   ┃   ┕ 03-01-15 Assign store/shop dept (NCR7000) 
+  ┃   ┝ 03-02 [AL] Date control menu 
+  ┃   ┃   ┝ 03-02-02 Print calendar file 
+  ┃   ┃   ┝ 03-02-03 Maintain current date 
+  ┃   ┃   ┝ 03-02-04 Maintain calendar management file 
+  ┃   ┃   ┝ 03-02-05 Print calendar management file 
+  ┃   ┃   ┕ 03-02-30 Purge calendar file 
+  ┃   ┝ 03-04 [AH] Communications menu 
+  ┃   ┃   ┝ 03-04-01 Home Office (Spacepac) 
+  ┃   ┃   ┝ 03-04-03 Set up/talk to CTC Home Office 
+  ┃   ┃   ┝ 03-04-04 Buyer packets 
+  ┃   ┃   ┝ 03-04-05 Enter rental data 
+  ┃   ┃   ┝ 03-04-07 Send acknowledgements 
+  ┃   ┃   ┝ 03-04-09 Rerun Digest 
+  ┃   ┃   ┝ 03-04-11 Enter/send customer surveys 
+  ┃   ┃   ┝ 03-04-12 Maintain work station file 
+  ┃   ┃   ┝ 03-04-15 [BL] List communication files menu 
+  ┃   ┃   ┃   ┝ 03-04-15-01 List log file ICD04PHY 
+  ┃   ┃   ┃   ┝ 03-04-15-16 Dump COMSND to print 
+  ┃   ┃   ┃   ┝ 03-04-15-17 Dump COMRCV to print 
+  ┃   ┃   ┃   ┝ 03-04-15-18 Dump COMCMB to print 
+  ┃   ┃   ┃   ┕ 03-04-15-19 Dump COMFILE to print 
+  ┃   ┃   ┝ 03-04-16 Install CAMPS data 
+  ┃   ┃   ┝ 03-04-20 Display status of POS Data Sharing 
+  ┃   ┃   ┝ 03-04-25 Ww orders communicated by MQ | PROGRAM: workWithOrdersCommunicatedByMQ
+  ┃   ┃   ┝ 03-04-26 [AI] Display packets communication 
+  ┃   ┃   ┃   ┝ 03-04-26-01 Display communication packets 
+  ┃   ┃   ┃   ┝ 03-04-26-02 Search shipment detail packets 
+  ┃   ┃   ┃   ┝ 03-04-26-03 Search invoice summary packets 
+  ┃   ┃   ┃   ┕ 03-04-26-04 Search IONIs packets 
+  ┃   ┃   ┕ 03-04-27 Dsp transmitted prod warranty data 
+  ┃   ┝ 03-05 [DS] Daily sales menu 
+  ┃   ┃   ┝ 03-05-01 Daily cash reg sales processing | PROGRAM: setUpDailySalesProcessing
+  ┃   ┃   ┝ 03-05-02 Display status of daily sales job | PROGRAM: dailySalesCurrentStatus
+  ┃   ┃   ┝ 03-05-03 What days shd dlysls setup tomor. | PROGRAM: dailySalesSetupDays
+  ┃   ┃   ┝ 03-05-04 Maintain daily sales time tables | PROGRAM: dailySalesTimetable
+  ┃   ┃   ┝ 03-05-05 Daily sales history audit | PROGRAM: dailySalesHistoryAudit
+  ┃   ┃   ┝ 03-05-08 Daily sales backout | PROGRAM: dailySalesBackout
+  ┃   ┃   ┝ 03-05-10 Work with dates store closed | PROGRAM: holidayScreen
+  ┃   ┃   ┝ 03-05-19  
+  ┃   ┃   ┕ 03-05-20 Rebuild sales summary file 
+  ┃   ┝ 03-08 [AM] Operating system commands menu 
+  ┃   ┃   ┝ 03-08-01 Work with job queue "QBATCH" 
+  ┃   ┃   ┝ 03-08-02 Work with active jobs 
+  ┃   ┃   ┝ 03-08-03 Work with job queue "LBATCH" 
+  ┃   ┃   ┝ 03-08-04 Work with job queue "SBATCH" 
+  ┃   ┃   ┝ 03-08-06 Work with job queue "CTCBATCH" 
+  ┃   ┃   ┝ 03-08-08 Work with nightly job q. "NBATCH" 
+  ┃   ┃   ┝ 03-08-09 Work with job queue "CBATCH" 
+  ┃   ┃   ┝ 03-08-10 Work with Saturday night job queue 
+  ┃   ┃   ┝ 03-08-11 Work with Sunday night job queue 
+  ┃   ┃   ┝ 03-08-12 Work with night report queue 
+  ┃   ┃   ┝ 03-08-15 Work with all job queues 
+  ┃   ┃   ┝ 03-08-16 Work with line status (all) 
+  ┃   ┃   ┝ 03-08-17 Work with controller status (all) 
+  ┃   ┃   ┝ 03-08-18 Work with device status (all) 
+  ┃   ┃   ┝ 03-08-19 Work with "QBATCH" subsystem jobs 
+  ┃   ┃   ┝ 03-08-20 Work with "QINTER" subsystem jobs 
+  ┃   ┃   ┝ 03-08-30 Work with all subsystem jobs 
+  ┃   ┃   ┝ 03-08-31 Display "QSYSOPR" messages 
+  ┃   ┃   ┝ 03-08-32 Work with submitted jobs 
+  ┃   ┃   ┝ 03-08-33 Work with all printers 
+  ┃   ┃   ┝ 03-08-34 Work with Memorex printer 
+  ┃   ┃   ┝ 03-08-35 Work with all output queues 
+  ┃   ┃   ┝ 03-08-36 Start a printer writer 
+  ┃   ┃   ┝ 03-08-37 Stop a printer writer 
+  ┃   ┃   ┝ 03-08-38 Initialize a tape 
+  ┃   ┃   ┕ 03-08-40 Change performance priority level 
+  ┃   ┝ 03-09 Reserved Product Re-balance 
+  ┃   ┝ 03-10 Reorganize Year-end files 
+  ┃   ┝ 03-12 Dealer Changeover Menu 
+  ┃   ┝ 03-13 Activate Product Locating 
+  ┃   ┕ 03-14 FF Review Location Exceptions 
+  ┝ 04 [EA] Ordering menu 
+  ┃   ┝ 04-01 Calculate suggested reg. orders | PROGRAM: csro
+  ┃   ┝ 04-02 Work with orders | PROGRAM: workWithOrdersByPO
+  ┃   ┝ 04-03 Post orders to communications file | PROGRAM: postOrdersToCommunicationsFile
+  ┃   ┝ 04-05 Calculate suggested placing order 
+  ┃   ┝ 04-06 Work with deals | PROGRAM: dealManagement
+  ┃   ┝ 04-07 Work with automated promo updates 
+  ┃   ┝ 04-08 [EN] Promo stock level menu 
+  ┃   ┃   ┝ 04-08-01 Calc. promo order by cutoff 
+  ┃   ┃   ┝ 04-08-02 Work with orders by date run 
+  ┃   ┃   ┝ 04-08-03  
+  ┃   ┃   ┝ 04-08-04  
+  ┃   ┃   ┝ 04-08-05  
+  ┃   ┃   ┝ 04-08-06 Work with Deals 
+  ┃   ┃   ┝ 04-08-07 Work with auto. promo updates 
+  ┃   ┃   ┝ 04-08-08  
+  ┃   ┃   ┝ 04-08-09  
+  ┃   ┃   ┝ 04-08-10 Change promo SL parameters 
+  ┃   ┃   ┝ 04-08-11  
+  ┃   ┃   ┝ 04-08-12 Work with promo stock levels | PROGRAM: workWithPromoStockLevels
+  ┃   ┃   ┝ 04-08-13  
+  ┃   ┃   ┝ 04-08-14  
+  ┃   ┃   ┝ 04-08-15  
+  ┃   ┃   ┝ 04-08-30 Ww promo Analyze exclusion crit. 
+  ┃   ┃   ┝ 04-08-31 Ww promo automatic posting crit. 
+  ┃   ┃   ┝ 04-08-32 Ww promo stock level defaulting 
+  ┃   ┃   ┝ 04-08-33 Ww B2B promo SL multipliers | PROGRAM: workWithB2bPromoSlMultipliers
+  ┃   ┃   ┝ 04-08-34  
+  ┃   ┃   ┝ 04-08-40 Work with promo pre-deal 
+  ┃   ┃   ┕ 04-08-41 Set up promo pre-deal parameters 
+  ┃   ┝ 04-09 [BA] Seasonal ordering menu 
+  ┃   ┃   ┝ 04-09-01 Work with seasonal setup 
+  ┃   ┃   ┝ 04-09-02 Calculate suggested seasonal order 
+  ┃   ┃   ┝ 04-09-10 Work with seasonal store defaults 
+  ┃   ┃   ┝ 04-09-17 Print suggest. seasonal orders rpt 
+  ┃   ┃   ┕ 04-09-32 [BB] Exclude from analyze seasonal ord 
+  ┃   ┃   ┃   ┝ 04-09-32-01 Set up/change exclusion criteria 
+  ┃   ┃   ┃   ┝ 04-09-32-02 Recreate list of exclusions 
+  ┃   ┃   ┃   ┝ 04-09-32-03 Maintain list of exclusions 
+  ┃   ┃   ┃   ┕ 04-09-32-04 Turn exclusion criteria on/off 
+  ┃   ┝ 04-10 Work with management reports 
+  ┃   ┝ 04-11 Print suggested promo orders rpt 
+  ┃   ┝ 04-12 Print suggested placing orders rpt 
+  ┃   ┝ 04-13 Print standing orders report 
+  ┃   ┝ 04-14 Print automated promo upd. report 
+  ┃   ┝ 04-15 Print outstanding order report 
+  ┃   ┝ 04-16 Print detailed outstndg order rpt 
+  ┃   ┝ 04-20 Restore orders deleted by IONI 
+  ┃   ┝ 04-21 Work with floor messages 
+  ┃   ┝ 04-22 Work with in-store timed specials 
+  ┃   ┝ 04-29  
+  ┃   ┝ 04-30 Work with rain checks 
+  ┃   ┝ 04-40 Work with orders (multi-store) 
+  ┃   ┕ 04-50 [BK] Ordering parameters menu 
+  ┃   ┃   ┝ 04-50-01 Work with weeks of supply tables | PROGRAM: workWithWeeksOfSupplyTables
+  ┃   ┃   ┝ 04-50-02 Work with order parameters 
+  ┃   ┃   ┝ 04-50-03 Work with sales curves 
+  ┃   ┃   ┝ 04-50-04 Calculate sales curve factors 
+  ┃   ┃   ┝ 04-50-05 Calculate order pts & stock levels | PROGRAM: calculateOrderPointsAndStockLevels
+  ┃   ┃   ┝ 04-50-06 Work with minimum order points | PROGRAM: workWithMinOrderPoints
+  ┃   ┃   ┝ 04-50-07 Work with order analyze parameters | PROGRAM: workWithOrderAnalyzeParameters
+  ┃   ┃   ┝ 04-50-08 Assign store usage cd to hold cd 
+  ┃   ┃   ┝ 04-50-09  
+  ┃   ┃   ┝ 04-50-10 Placing global defaults 
+  ┃   ┃   ┝ 04-50-19  
+  ┃   ┃   ┝ 04-50-20 Transfer sales curves 
+  ┃   ┃   ┝ 04-50-21 Set sales curve to fineline 
+  ┃   ┃   ┝ 04-50-22 Work with excessive order limits | PROGRAM: workWithExcessiveOrderLimits
+  ┃   ┃   ┝ 04-50-29  
+  ┃   ┃   ┝ 04-50-30 [ER] Exclude from Analyze Promo Order 
+  ┃   ┃   ┃   ┝ 04-50-30-01 Set up/change exclusion criteria 
+  ┃   ┃   ┃   ┝ 04-50-30-02 Recreate list of exclusions 
+  ┃   ┃   ┃   ┝ 04-50-30-03 Maintain list of exclusions 
+  ┃   ┃   ┃   ┕ 04-50-30-04 Turn exclusion criteria on/off 
+  ┃   ┃   ┕ 04-50-31 [EL] Exclude from Analyze Placing Order 
+  ┃   ┃   ┃   ┝ 04-50-31-01 Set up/change exclusion criteria 
+  ┃   ┃   ┃   ┝ 04-50-31-02 Recreate list of exclusions 
+  ┃   ┃   ┃   ┝ 04-50-31-03 Maintain list of exclusions 
+  ┃   ┃   ┃   ┕ 04-50-31-04 Turn exclusion criteria on/off 
+  ┝ 05 [DK] Shipping and receiving menu 
+  ┃   ┝ 05-01 Work with invoices | PROGRAM: workWithInvoices
+  ┃   ┝ 05-02 Work with picking criteria 
+  ┃   ┝ 05-03 Work with stock movements | PROGRAM: workWithStockMovements
+  ┃   ┝ 05-04 Act./deact. stock movement (range) 
+  ┃   ┝ 05-05 Display Receipt History | PROGRAM: receiptHistoryByProduct
+  ┃   ┝ 05-06 Work with invoice summary | PROGRAM: workWithInvoiceSummary
+  ┃   ┝ 05-07 Maintain store usage codes for rec | PROGRAM: maintainStoreUsageCodesForReceivingEditPage
+  ┃   ┝ 05-08 Maintain carts | PROGRAM: maintainCarts
+  ┃   ┝ 05-10 Work with shipments 
+  ┃   ┝ 05-11 Delete shipments 
+  ┃   ┝ 05-12 Work with bill of lading numbers 
+  ┃   ┝ 05-13 Print shipment adjustment history 
+  ┃   ┝ 05-14 Prepare claims for shipment 
+  ┃   ┝ 05-19  
+  ┃   ┝ 05-20 Invoices in pricing inquiry | PROGRAM: invoicesInPricing
+  ┃   ┝ 05-21 Invoices in pricing - update | PROGRAM: invoicesInPricingCompleted
+  ┃   ┝ 05-22  
+  ┃   ┝ 05-23 Maintain truck location file | PROGRAM: truckLocationSearch
+  ┃   ┝ 05-24 Truck location inquiry | PROGRAM: truckLocationInquiry
+  ┃   ┝ 05-26 Do manual tickets 
+  ┃   ┝ 05-27 Request bin/shelf labels by range 
+  ┃   ┝ 05-28 Display AMS receipt history | PROGRAM: amsReceiptHistoryByProduct
+  ┃   ┝ 05-59 Change employee PIN 
+  ┃   ┕ 05-71 Work with manual receipts | PROGRAM: workWithManualReceipts
+  ┝ 06 [DJ] Customer returns menu 
+  ┃   ┝ 06-01 Work with customer returns 
+  ┃   ┝ 06-02 Reprint customer returns vouchers 
+  ┃   ┝ 06-03 Work with stocklist groups 
+  ┃   ┝ 06-04 Print customer returns daily list 
+  ┃   ┝ 06-05 Print returns summary by class 
+  ┃   ┝ 06-06 Work with cust. returns vouchers 
+  ┃   ┝ 06-07 Work with customer repairs 
+  ┃   ┝ 06-08 Work with returns printers 
+  ┃   ┝ 06-09 Work with returns workstations 
+  ┃   ┝ 06-10 Void customer returns 
+  ┃   ┝ 06-19  
+  ┃   ┝ 06-20 [BZ] Adjusta-Card menu 
+  ┃   ┃   ┝ 06-20-01 Adjusta-Card entry 
+  ┃   ┃   ┝ 06-20-02 Adjusta-Card inquiry 
+  ┃   ┃   ┝ 06-20-03 Bill of lading file maintenance 
+  ┃   ┃   ┝ 06-20-04 Adjusta-Card credit maintenance 
+  ┃   ┃   ┝ 06-20-05 List Adjusta-Cards credit in full 
+  ┃   ┃   ┝ 06-20-06 List pending Adjusta-Cards 
+  ┃   ┃   ┝ 06-20-07 List Adjusta-Cards with credit due 
+  ┃   ┃   ┝ 06-20-08 List Adjusta-Cards by b/l number 
+  ┃   ┃   ┝ 06-20-09 List Adjusta-Cards no credit rcvd 
+  ┃   ┃   ┝ 06-20-10 List Adjusta-Cards credit refused 
+  ┃   ┃   ┝ 06-20-11 Adjusting type code maintenance 
+  ┃   ┃   ┕ 06-20-12 Refusal code maintenance 
+  ┃   ┝ 06-57  
+  ┃   ┕ 06-59 Change employee PIN 
+  ┝ 07 [EE] Product inventory menu 
+  ┃   ┝ 07-01 Work with corp. product info. | PROGRAM: workWithCorpProductInfo
+  ┃   ┝ 07-02 Work with store product info. | PROGRAM: workWithStoreProductInfo
+  ┃   ┝ 07-03 Change product info. by ranges 
+  ┃   ┝ 07-04 Work with subs/related products | PROGRAM: workWithSubsRelatedProducts
+  ┃   ┝ 07-05 [BS] Price & env fee link changes menu 
+  ┃   ┃   ┝ 07-05-01 Work with product prices | PROGRAM: workWithProductPrices
+  ┃   ┃   ┝ 07-05-02 Display pending price changes | PROGRAM: workWithPendingPriceChangesMainMenu
+  ┃   ┃   ┝ 07-05-03 Send price changes to registers | PROGRAM: selectFrontendPriceChangeOption
+  ┃   ┃   ┝ 07-05-04 Work with env fee link changes 
+  ┃   ┃   ┝ 07-05-09  
+  ┃   ┃   ┝ 07-05-10 Print lbls/tkts for price changes 
+  ┃   ┃   ┝ 07-05-11 Manual price tickets 
+  ┃   ┃   ┝ 07-05-12 Print bin labels by deal 
+  ┃   ┃   ┝ 07-05-19  
+  ┃   ┃   ┕ 07-05-20 [DB] Signage menu 
+  ┃   ┃   ┃   ┝ 07-05-20-01 Create promotional signs 
+  ┃   ┃   ┃   ┝ 07-05-20-02 Print promotional signs (no GST) 
+  ┃   ┃   ┃   ┝ 07-05-20-03 Print promotional signs (with GST) 
+  ┃   ┃   ┃   ┝ 07-05-20-04 Reprint maintenance 
+  ┃   ┃   ┃   ┝ 07-05-20-09  
+  ┃   ┃   ┃   ┝ 07-05-20-10 Product description maintenance 
+  ┃   ┃   ┃   ┝ 07-05-20-11 List product description file 
+  ┃   ┃   ┃   ┝ 07-05-20-19  
+  ┃   ┃   ┃   ┕ 07-05-20-20 Free-format signs 
+  ┃   ┝ 07-06 Work with corp. information update 
+  ┃   ┝ 07-07 Set up ord. info. for new products 
+  ┃   ┝ 07-09 Set prim. supply fac. for products 
+  ┃   ┝ 07-11 Maintain bar code | PROGRAM: maintainBarCode
+  ┃   ┝ 07-12 Work with order hold codes 
+  ┃   ┝ 07-13 Manual sales returns and voids 
+  ┃   ┝ 07-14 [PL] Product locations menu 
+  ┃   ┃   ┝ 07-14-01 Work with facility locations 
+  ┃   ┃   ┝ 07-14-02 Work with product locations 
+  ┃   ┃   ┝ 07-14-03 Display product locations 
+  ┃   ┃   ┝ 07-14-04 Add bincaps by location 
+  ┃   ┃   ┝ 07-14-05 Change bincaps by location 
+  ┃   ┃   ┝ 07-14-06 Consolidate bincaps to STORL1 
+  ┃   ┃   ┝ 07-14-07 Delete product locations 
+  ┃   ┃   ┕ 07-14-08 Change area bincaps by location 
+  ┃   ┝ 07-17 Work with prod. locations by range 
+  ┃   ┝ 07-21 Adjust quantity on hand 
+  ┃   ┝ 07-22 Display adjustment history 
+  ┃   ┝ 07-23 Delete adjustment history 
+  ┃   ┝ 07-24 Back Out Change Prod Info by Range 
+  ┃   ┝ 07-30 Maintain parts database 
+  ┃   ┝ 07-31 Maintain parts reminders by range 
+  ┃   ┝ 07-32 Rebuild English alpha search keywd 
+  ┃   ┝ 07-33 Rebuild French alpha search keywrd 
+  ┃   ┝ 07-34 Work with comments by prod. group 
+  ┃   ┝ 07-35 Work with prepacks 
+  ┃   ┕ 07-37 Exclude castings by product range 
+  ┝ 08 [DL] Master files menu 
+  ┃   ┝ 08-01 Work with customers 
+  ┃   ┝ 08-02 Work with organizations 
+  ┃   ┝ 08-03 Work with facilities 
+  ┃   ┝ 08-04 Work with product groups | PROGRAM: workWithProductGroup
+  ┃   ┝ 08-05 Work with tax tables 
+  ┃   ┝ 08-06 Work with customer file 
+  ┃   ┝ 08-07 Print customer report 
+  ┃   ┕ 08-08 Work with coverage 
+  ┝ 09 [DM] Claims and settlements menu 
+  ┃   ┝ 09-01 Work with claims 
+  ┃   ┝ 09-02 Work with claim settlements 
+  ┃   ┝ 09-03 Prepare claims for shipment 
+  ┃   ┝ 09-04 Work w. information pending claims 
+  ┃   ┝ 09-09  
+  ┃   ┝ 09-10 Maintain corporate rebates 
+  ┃   ┝ 09-11 List outstanding corporate rebates 
+  ┃   ┝ 09-58  
+  ┃   ┕ 09-59 Change employee PIN 
+  ┝ 10 [EF] Reports menu 
+  ┃   ┝ 10-01 Work with management reports 
+  ┃   ┝ 10-03  
+  ┃   ┝ 10-04 Work with reporting options 
+  ┃   ┝ 10-06 Customer transaction analysis 
+  ┃   ┝ 10-07 Weekly sales by time of day 
+  ┃   ┝ 10-08 Weekly customer traffic 
+  ┃   ┝ 10-11 Margin analysis report 
+  ┃   ┝ 10-16 Stockout 
+  ┃   ┝ 10-20 Suggested seasonal orders 
+  ┃   ┝ 10-21 Suggested promotional orders 
+  ┃   ┝ 10-22 Suggested placing orders 
+  ┃   ┝ 10-23 Print ordering parameter analysis 
+  ┃   ┝ 10-31 Reserved Product Reports 
+  ┃   ┝ 10-35 Tax exempt report 
+  ┃   ┝ 10-36 Lost Sales Report 
+  ┃   ┕ 10-40 Store audit report 
+  ┝ 11 [DO] Application parameters menu 
+  ┃   ┝ 11-01 Receipt parameters 
+  ┃   ┝ 11-02 Picking parameters 
+  ┃   ┝ 11-03 Ticket printing parameters 
+  ┃   ┝ 11-04 Customer return parameters 
+  ┃   ┝ 11-05 Customer return print parameters 
+  ┃   ┝ 11-06 Customer return report parameters 
+  ┃   ┝ 11-07 Claims parameters 
+  ┃   ┝ 11-08 Shipment parameters 
+  ┃   ┝ 11-09 Warehouse control parameters 
+  ┃   ┝ 11-10 RF receiving parameters 
+  ┃   ┝ 11-11 Product maintenance parameters 
+  ┃   ┝ 11-12 Change CDCS polling parameters 
+  ┃   ┝ 11-13 Work with signage parameters 
+  ┃   ┝ 11-14 Remote store inquiry defaults 
+  ┃   ┝ 11-15 Work with remote access 
+  ┃   ┝ 11-19  
+  ┃   ┝ 11-20 [BK] Ordering parameters menu 
+  ┃   ┃   ┝ 11-20-01 Work with weeks of supply tables | PROGRAM: workWithWeeksOfSupplyTables
+  ┃   ┃   ┝ 11-20-02 Work with order parameters 
+  ┃   ┃   ┝ 11-20-03 Work with sales curves 
+  ┃   ┃   ┝ 11-20-04 Calculate sales curve factors 
+  ┃   ┃   ┝ 11-20-05 Calculate order pts & stock levels | PROGRAM: calculateOrderPointsAndStockLevels
+  ┃   ┃   ┝ 11-20-06 Work with minimum order points | PROGRAM: workWithMinOrderPoints
+  ┃   ┃   ┝ 11-20-07 Work with order analyze parameters | PROGRAM: workWithOrderAnalyzeParameters
+  ┃   ┃   ┝ 11-20-08 Assign store usage cd to hold cd 
+  ┃   ┃   ┝ 11-20-09  
+  ┃   ┃   ┝ 11-20-10 Placing global defaults 
+  ┃   ┃   ┝ 11-20-19  
+  ┃   ┃   ┝ 11-20-20 Transfer sales curves 
+  ┃   ┃   ┝ 11-20-21 Set sales curve to fineline 
+  ┃   ┃   ┝ 11-20-22 Work with excessive order limits | PROGRAM: workWithExcessiveOrderLimits
+  ┃   ┃   ┝ 11-20-29  
+  ┃   ┃   ┝ 11-20-30 [ER] Exclude from Analyze Promo Order 
+  ┃   ┃   ┃   ┝ 11-20-30-01 Set up/change exclusion criteria 
+  ┃   ┃   ┃   ┝ 11-20-30-02 Recreate list of exclusions 
+  ┃   ┃   ┃   ┝ 11-20-30-03 Maintain list of exclusions 
+  ┃   ┃   ┃   ┕ 11-20-30-04 Turn exclusion criteria on/off 
+  ┃   ┃   ┕ 11-20-31 [EL] Exclude from Analyze Placing Order 
+  ┃   ┃   ┃   ┝ 11-20-31-01 Set up/change exclusion criteria 
+  ┃   ┃   ┃   ┝ 11-20-31-02 Recreate list of exclusions 
+  ┃   ┃   ┃   ┝ 11-20-31-03 Maintain list of exclusions 
+  ┃   ┃   ┃   ┕ 11-20-31-04 Turn exclusion criteria on/off 
+  ┃   ┝ 11-21 [EM] PICKING MAIN MENU 
+  ┃   ┃   ┝ 11-21-01 Create "Pick-At-Qty" for Product 
+  ┃   ┃   ┝ 11-21-02 Maintain "Pick-At-Qty" Overrides 
+  ┃   ┃   ┝ 11-21-03 Setup Picking Schedule by Day 
+  ┃   ┃   ┝ 11-21-04 Initialize Picking Files 
+  ┃   ┃   ┝ 11-21-05 Maintain Picking Files 
+  ┃   ┃   ┝ 11-21-06 Generate RF Picklists 
+  ┃   ┃   ┝ 11-21-07 Generate Appearance Picklist 
+  ┃   ┃   ┝ 11-21-08 Product Movement Inquiry 
+  ┃   ┃   ┝ 11-21-09 Setup Logistics Environment 
+  ┃   ┃   ┕ 11-21-10 Cross-merchandising Report 
+  ┃   ┝ 11-22 Maintain RF messages 
+  ┃   ┝ 11-23 Maintain deal on floor 
+  ┃   ┝ 11-24 Select Store FSA for VPOP 
+  ┃   ┝ 11-25 Receipt Lookup by Market Area list 
+  ┃   ┝ 11-49  
+  ┃   ┝ 11-50 Maintain control options 
+  ┃   ┝ 11-51 Maintain control file 
+  ┃   ┝ 11-52 Multi-store parameters 
+  ┃   ┕ 11-60  
+  ┝ 13 [CU] Service centre menu 
+  ┃   ┝ 13-01 Estimates/work orders/invoices 
+  ┃   ┝ 13-02 [CV] S/C file maintenance menu 
+  ┃   ┃   ┝ 13-02-01 Maintain service control options 
+  ┃   ┃   ┝ 13-02-02 Maintain scheduling control file 
+  ┃   ┃   ┝ 13-02-03 Maintain service deal 
+  ┃   ┃   ┝ 13-02-04 Maintain service book information 
+  ┃   ┃   ┝ 13-02-05 Maintain shop skills 
+  ┃   ┃   ┝ 13-02-06 Maintain service centre employees 
+  ┃   ┃   ┝ 13-02-07 Maintain tools/manuals shop use 
+  ┃   ┃   ┝ 13-02-08 Maintain hold codes 
+  ┃   ┃   ┝ 13-02-09 Maintain customer vehicles 
+  ┃   ┃   ┝ 13-02-10 Maintain vendors for P/O 
+  ┃   ┃   ┝ 13-02-11 Move invoice(s) to history 
+  ┃   ┃   ┝ 13-02-12 Book technicians in and out 
+  ┃   ┃   ┝ 13-02-13 Assign screen(s) to printer(s) 1-3 
+  ┃   ┃   ┝ 13-02-14 Assign screen(s) to printer(s) 4-6 
+  ┃   ┃   ┝ 13-02-15 Maintain priority codes 
+  ┃   ┃   ┝ 13-02-16 Maintain certification numbers 
+  ┃   ┃   ┝ 13-02-17 Maintain general notes file 
+  ┃   ┃   ┝ 13-02-18 Maintain terminal by business 
+  ┃   ┃   ┝ 13-02-19 Maintain technician rate table 
+  ┃   ┃   ┝ 13-02-20 Work order history purge 
+  ┃   ┃   ┕ 13-02-21 Refresh courseware libraries 
+  ┃   ┝ 13-03 [CW] Service centre reports menu 
+  ┃   ┃   ┝ 13-03-01 List service jobs/components 
+  ┃   ┃   ┝ 13-03-02 List service centre employees 
+  ┃   ┃   ┝ 13-03-03 List customers/vehicles 
+  ┃   ┃   ┝ 13-03-04 List parts component database 
+  ┃   ┃   ┝ 13-03-05 Print work orders on hold 
+  ┃   ┃   ┝ 13-03-06 Package pricing report 
+  ┃   ┃   ┝ 13-03-07 Print task analysis 
+  ┃   ┃   ┝ 13-03-08 List supplier name/address 
+  ┃   ┃   ┝ 13-03-09 Print tool usage report 
+  ┃   ┃   ┝ 13-03-11 Print service centre G-list 
+  ┃   ┃   ┝ 13-03-12 Print estimates 
+  ┃   ┃   ┝ 13-03-13 Print open work orders 
+  ┃   ┃   ┝ 13-03-14 Print invoices not paid 
+  ┃   ┃   ┝ 13-03-15 Print work order audits 
+  ┃   ┃   ┝ 13-03-16 Work order number status 
+  ┃   ┃   ┕ 13-03-17 Print purchase order audits 
+  ┃   ┝ 13-04 [CX] Service centre inquiry menu 
+  ┃   ┃   ┝ 13-04-01 Search work order history 
+  ┃   ┃   ┝ 13-04-02 Purchase order history 
+  ┃   ┃   ┝ 13-04-03 Active work order inquiry 
+  ┃   ┃   ┝ 13-04-04 Display work load 
+  ┃   ┃   ┝ 13-04-05 Display service centre employees 
+  ┃   ┃   ┝ 13-04-06 Available skills inquiry 
+  ┃   ┃   ┝ 13-04-07 Hold code inquiry 
+  ┃   ┃   ┝ 13-04-08 Customer vehicle search 
+  ┃   ┃   ┕ 13-04-09 Current purchase order inquiry 
+  ┃   ┝ 13-05 [CY] Purchase order system 
+  ┃   ┃   ┝ 13-05-01 Create/maintain/receive P/O 
+  ┃   ┃   ┝ 13-05-02 Match P/O to vendor invoice 
+  ┃   ┃   ┕ 13-05-03 Move selected P/O to history 
+  ┃   ┝ 13-06 [CZ] Edit/post technician time sheets 
+  ┃   ┃   ┝ 13-06-01 Print employee time sheets 
+  ┃   ┃   ┝ 13-06-02 Edit service history 
+  ┃   ┃   ┝ 13-06-03 Maintain pay status 
+  ┃   ┃   ┝ 13-06-04 Post to payroll 
+  ┃   ┃   ┕ 13-06-05 Reprint technician time sheets 
+  ┃   ┝ 13-07 Scheduling/dispatch 
+  ┃   ┕ 13-08 [DG] Postcard program menu 
+  ┃   ┃   ┝ 13-08-01 Create workfile for editing 
+  ┃   ┃   ┝ 13-08-02 Edit workfile 
+  ┃   ┃   ┝ 13-08-03 Report options 
+  ┃   ┃   ┕ 13-08-04 Maintain postcard text / print 
+  ┝ 14 [ED] Inventory audit menu 
+  ┃   ┝ 14-01 Work with audit batches | PROGRAM: workWithAuditBatches
+  ┃   ┝ 14-02 Create shrinkage report 
+  ┃   ┝ 14-03 Adjustment history inquiry 
+  ┃   ┝ 14-04 Floor inquiry 
+  ┃   ┝ 14-05 Adjust quantity on hand 
+  ┃   ┝ 14-06 Reset shrinkage field 
+  ┃   ┝ 14-07 Third party translate request | PROGRAM: submitThirdPartyTranslateRequest
+  ┃   ┝ 14-08 Work with management reports 
+  ┃   ┝ 14-09 Work with manual inventory 
+  ┃   ┕ 14-10 Clear manual inventory 
+  ┝ 15 [DE] Radio frequency functions menu 
+  ┃   ┝ 15-01 [DF] Access radio frequency menu 
+  ┃   ┃   ┝ 15-01-01 Inquiry 
+  ┃   ┃   ┝ 15-01-02 Inventory Audit 
+  ┃   ┃   ┝ 15-01-03 Fill / empty bin 
+  ┃   ┃   ┝ 15-01-04 File maintenance 
+  ┃   ┃   ┝ 15-01-05 Portable printer 
+  ┃   ┃   ┝ 15-01-06 RF Receiving 
+  ┃   ┃   ┝ 15-01-07 Manual receipt 
+  ┃   ┃   ┝ 15-01-08 Fill / from warehouse 
+  ┃   ┃   ┝ 15-01-09 RF Signage request 
+  ┃   ┃   ┝ 15-01-10 [PF] RF Fast Find Menu 
+  ┃   ┃   ┃   ┝ 15-01-10-01 FF Locate product 
+  ┃   ┃   ┃   ┝ 15-01-10-02 FF Hole checker 
+  ┃   ┃   ┃   ┝ 15-01-10-03 Select pick list 
+  ┃   ┃   ┃   ┝ 15-01-10-04 Pick products 
+  ┃   ┃   ┃   ┕ 15-01-10-05 Fast Checker 
+  ┃   ┃   ┝ 15-01-11 Access Logistics RF Menu 
+  ┃   ┃   ┝ 15-01-12 RF receiving (full screen) | PROGRAM: accessRfReceiving
+  ┃   ┃   ┝ 15-01-13 [EX] Express 
+  ┃   ┃   ┃   ┝ 15-01-13-01 Cash Line Busting 
+  ┃   ┃   ┃   ┝ 15-01-13-02 Department Invoicing 
+  ┃   ┃   ┃   ┝ 15-01-13-04  
+  ┃   ┃   ┃   ┕ 15-01-13-05 Express Report 
+  ┃   ┃   ┝ 15-01-14 Manage Containers 
+  ┃   ┃   ┕ 15-01-15 RF ERI 
+  ┃   ┝ 15-10 Create RF Receipt work file | PROGRAM: rfWorkFileCreationInvoiceSelection
+  ┃   ┝ 15-11 RF Dealer claims 
+  ┃   ┝ 15-12 Print Detailed Exception report 
+  ┃   ┝ 15-13 Print Detailed Exception (Cases) 
+  ┃   ┝ 15-14 Print Summary Exception report 
+  ┃   ┝ 15-15  
+  ┃   ┕ 15-20 Enter access codes | PROGRAM: accessCodeSelection
+  ┝ 19 [BY] Manpower scheduling menu 
+  ┃   ┝ 19-01 Schedule employees 
+  ┃   ┝ 19-02 Maintain customer traffic patterns 
+  ┃   ┝ 19-04 Maintain related scheduling areas 
+  ┃   ┝ 19-05 Maintain control file 
+  ┃   ┝ 19-06 Maintain *BASE* file 
+  ┃   ┝ 19-07 Set up employee messages 
+  ┃   ┝ 19-08 Print employee hours by employee 
+  ┃   ┝ 19-09 Print employee hours by department 
+  ┃   ┝ 19-10 Edit dept/activity cross reference 
+  ┃   ┝ 19-11 Clock in and out 
+  ┃   ┝ 19-12 Work with employee hours 
+  ┃   ┝ 19-14 Copy previous scheduled week 
+  ┃   ┝ 19-16 Work with SPI 
+  ┃   ┝ 19-17 List dif between act traffic & sch 
+  ┃   ┝ 19-18 Maintain payroll stats 
+  ┃   ┝ 19-19 List scheduling areas 
+  ┃   ┝ 19-20 List related scheduling areas 
+  ┃   ┝ 19-21 List dept/scheduling areas 
+  ┃   ┝ 19-22 List holiday schedules 
+  ┃   ┝ 19-24 Print area schedules 
+  ┃   ┝ 19-26 Enter emp days off,lunches,holiday 
+  ┃   ┝ 19-27 Enter employee availability 
+  ┃   ┝ 19-28 List employee availability 
+  ┃   ┝ 19-31 Payroll maintenance for clock-in 
+  ┃   ┕ 19-32 Purge clock-in records 6 mos. old 
+  ┝ 20 [EB] OSCAR accounting menu 
+  ┃   ┝ 20-01 [CF] General ledger menu 
+  ┃   ┃   ┝ 20-01-01 Enter/update control file 
+  ┃   ┃   ┝ 20-01-02 Enter/update chart of accounts 
+  ┃   ┃   ┝ 20-01-03 Enter G/L transactions 
+  ┃   ┃   ┝ 20-01-05 Print data posted to next month 
+  ┃   ┃   ┝ 20-01-06 List A/P postings in current month 
+  ┃   ┃   ┝ 20-01-07 [CI] Report writer menu 
+  ┃   ┃   ┃   ┝ 20-01-07-01 Define automatic journal entries 
+  ┃   ┃   ┃   ┝ 20-01-07-02 Post automatic journal entries 
+  ┃   ┃   ┃   ┝ 20-01-07-04 Maintain report format file 
+  ┃   ┃   ┃   ┝ 20-01-07-05 Maintain G/L linkage file 
+  ┃   ┃   ┃   ┝ 20-01-07-07 Maintain budget file 
+  ┃   ┃   ┃   ┝ 20-01-07-08 Maintain original budgets-last yr 
+  ┃   ┃   ┃   ┝ 20-01-07-10 Report writer update program 
+  ┃   ┃   ┃   ┝ 20-01-07-11 Maintain statement headings 
+  ┃   ┃   ┃   ┝ 20-01-07-12 Define G/L report formats 
+  ┃   ┃   ┃   ┝ 20-01-07-13 Enter G/L report control files 
+  ┃   ┃   ┃   ┝ 20-01-07-14 List G/L report control files 
+  ┃   ┃   ┃   ┝ 20-01-07-15 Run G/L financial statements 
+  ┃   ┃   ┃   ┝ 20-01-07-16 List automatic journal entry rules 
+  ┃   ┃   ┃   ┝ 20-01-07-18 Print report format file 
+  ┃   ┃   ┃   ┝ 20-01-07-20 Print G/L linkage file 
+  ┃   ┃   ┃   ┝ 20-01-07-21 Report writer proof list-job queue 
+  ┃   ┃   ┃   ┝ 20-01-07-22 Print budgets in linkage format 
+  ┃   ┃   ┃   ┝ 20-01-07-24 Print report 
+  ┃   ┃   ┃   ┝ 20-01-07-26 Loan amortization 
+  ┃   ┃   ┃   ┝ 20-01-07-28 Print budgets in control file form 
+  ┃   ┃   ┃   ┕ 20-01-07-30 Print accounts not linked to rpt 
+  ┃   ┃   ┝ 20-01-08 List complete year G/L -all months 
+  ┃   ┃   ┝ 20-01-10 Account screen inq - current month 
+  ┃   ┃   ┝ 20-01-11 Account screen inq - next month 
+  ┃   ┃   ┝ 20-01-12 Change G/L date descriptions 
+  ┃   ┃   ┝ 20-01-13 List chart of accounts (descript) 
+  ┃   ┃   ┝ 20-01-14 List chart of accounts (trial bal) 
+  ┃   ┃   ┝ 20-01-15 List monthly trans (posting order) 
+  ┃   ┃   ┝ 20-01-16 List monthly trans (by account) 
+  ┃   ┃   ┝ 20-01-17 General ledger -current month only 
+  ┃   ┃   ┝ 20-01-18 List next month's transactions 
+  ┃   ┃   ┝ 20-01-19 List year's transactions 
+  ┃   ┃   ┝ 20-01-20 List transactions from last year 
+  ┃   ┃   ┝ 20-01-21 Display trns for months closed out 
+  ┃   ┃   ┝ 20-01-22 Inquiry on previous G/L 
+  ┃   ┃   ┝ 20-01-23 Print audit working paper 
+  ┃   ┃   ┝ 20-01-24 Enter rental data 
+  ┃   ┃   ┝ 20-01-26 Change G/L account numbers 
+  ┃   ┃   ┝ 20-01-27 List G/L account number changes 
+  ┃   ┃   ┝ 20-01-28 Print changes in new acct sequence 
+  ┃   ┃   ┝ 20-01-29 [AP] Year-end menu 
+  ┃   ┃   ┃   ┝ 20-01-29-07 Run the G/L year-end closeout 
+  ┃   ┃   ┃   ┝ 20-01-29-15 Change to new numbers 
+  ┃   ┃   ┃   ┝ 20-01-29-22 Zero out bal fwd in all accounts 
+  ┃   ┃   ┃   ┝ 20-01-29-26 Clear current year's budget 
+  ┃   ┃   ┃   ┝ 20-01-29-27 Copy next yr budget to current yr 
+  ┃   ┃   ┃   ┕ 20-01-29-28 Move last yr act to this yr budget 
+  ┃   ┃   ┕ 20-01-30 Perform month-end close out 
+  ┃   ┝ 20-02 [CD] Accounts payable menu 
+  ┃   ┃   ┝ 20-02-01 Maintain supplier name/addresses 
+  ┃   ┃   ┝ 20-02-02 List supplier name/addresses 
+  ┃   ┃   ┝ 20-02-03 Alpha search for suppliers 
+  ┃   ┃   ┝ 20-02-05 Enter invoice transactions 
+  ┃   ┃   ┝ 20-02-06 List invoice transactions 
+  ┃   ┃   ┝ 20-02-07 Post invoice transactions 
+  ┃   ┃   ┝ 20-02-09 Aged listing of payables 
+  ┃   ┃   ┝ 20-02-10 Inquiry on outstanding invoices 
+  ┃   ┃   ┝ 20-02-11 Inquiry on paid invoices 
+  ┃   ┃   ┝ 20-02-12 List outstanding invoices 
+  ┃   ┃   ┝ 20-02-15 Modify unpaid invoices 
+  ┃   ┃   ┝ 20-02-17 Purge miscellaneous suppliers 
+  ┃   ┃   ┝ 20-02-18 Purge paid invoice history 
+  ┃   ┃   ┝ 20-02-19 List paid invoice history 
+  ┃   ┃   ┝ 20-02-20 List cheques for 1 month 
+  ┃   ┃   ┝ 20-02-21 Clear/enter cheques 
+  ┃   ┃   ┝ 20-02-22 List cheque reconcilation 
+  ┃   ┃   ┝ 20-02-23 Purge cleared cheques 
+  ┃   ┃   ┕ 20-02-30 Accounts payable cheque programs 
+  ┃   ┝ 20-03 [CE] Accounts receivable menu 
+  ┃   ┃   ┕ 20-03-01 Accounts receivable system 
+  ┃   ┝ 20-04 Payroll menu 
+  ┃   ┝ 20-05 [BD] Name and address menu 
+  ┃   ┃   ┝ 20-05-01 List name/address alphabetically 
+  ┃   ┃   ┝ 20-05-02 List name/address by department 
+  ┃   ┃   ┝ 20-05-03 List active only by department 
+  ┃   ┃   ┝ 20-05-04 Single line list active by dept 
+  ┃   ┃   ┝ 20-05-05 Name/phone inquiry alphabetically 
+  ┃   ┃   ┝ 20-05-06 Name/phone inquiry by department 
+  ┃   ┃   ┕ 20-05-07 Active only inquiry by department 
+  ┃   ┕ 20-06 [AJ] Cash balancing menu 
+  ┃   ┃   ┝ 20-06-01 Maintain cashier names 
+  ┃   ┃   ┝ 20-06-02 Add cashiers to daily cash file 
+  ┃   ┃   ┝ 20-06-03 Enter manual voids 
+  ┃   ┃   ┝ 20-06-04 List manual voids 
+  ┃   ┃   ┝ 20-06-05 Daily balancing program 
+  ┃   ┃   ┝ 20-06-10 Enter cashier floats 
+  ┃   ┃   ┝ 20-06-11 Cash balancing calculator 
+  ┃   ┃   ┝ 20-06-12 [BF] N.S.F. cheque menu 
+  ┃   ┃   ┃   ┝ 20-06-12-02 Enter cheque information 
+  ┃   ┃   ┃   ┝ 20-06-12-04 List all NSF cheques on file 
+  ┃   ┃   ┃   ┝ 20-06-12-06 List only outstanding NSF cheques 
+  ┃   ┃   ┃   ┝ 20-06-12-07 Summary NSF list 
+  ┃   ┃   ┃   ┕ 20-06-12-17 Search for cheque information 
+  ┃   ┃   ┝ 20-06-13 Maintain period-end dates 
+  ┃   ┃   ┝ 20-06-14 [CE] Accounts receivable menu 
+  ┃   ┃   ┃   ┕ 20-06-14-01 Accounts receivable system 
+  ┃   ┃   ┝ 20-06-15 Adjust YTD and MTD cashier totals 
+  ┃   ┃   ┝ 20-06-16 List cashiers 
+  ┃   ┃   ┝ 20-06-17 Enter cash pickups 
+  ┃   ┃   ┝ 20-06-18 List cash pickups by pickup nbr 
+  ┃   ┃   ┝ 20-06-19 List cash pickups by cashier 
+  ┃   ┃   ┝ 20-06-20 List daily cash file 
+  ┃   ┃   ┝ 20-06-21 Post cash balancing file 
+  ┃   ┃   ┝ 20-06-23 Cash adjustment report (MTD) 
+  ┃   ┃   ┝ 20-06-24 Define G/L accts to interface cash 
+  ┃   ┃   ┝ 20-06-25 Monthly cash balancing report 
+  ┃   ┃   ┝ 20-06-26 Interface MTD cash to G/L system 
+  ┃   ┃   ┝ 20-06-27 Monthly cash balancing close out 
+  ┃   ┃   ┝ 20-06-28 Cashier over/under report 
+  ┃   ┃   ┝ 20-06-29 Cashier statistics 
+  ┃   ┃   ┝ 20-06-30 Manual sales returns and voids 
+  ┃   ┃   ┕ 20-06-31 Display cash balancing tables 
+  ┝ 21 [MS] Multi-store menu 
+  ┃   ┝ 21-01 Multi-store manager's inquiry 
+  ┃   ┝ 21-02 Multi-store floor inquiry 
+  ┃   ┝ 21-03 Multi-store ad hoc report 
+  ┃   ┝ 21-10  
+  ┃   ┝ 21-11 Regular order transfer request 
+  ┃   ┝ 21-12 Overstock transfer request 
+  ┃   ┝ 21-14 Work with suggested transfers 
+  ┃   ┝ 21-15 W.w. outgoing/incoming transfers 
+  ┃   ┝ 21-16 Transfer reports 
+  ┃   ┝ 21-17 Work with orders (multi-store) 
+  ┃   ┝ 21-20  
+  ┃   ┝ 21-21 Work with transfer rules 
+  ┃   ┝ 21-22 Work with store transfer priority 
+  ┃   ┝ 21-30  
+  ┃   ┝ 21-31  
+  ┃   ┝ 21-32 Set up daily sales (multi-store) 
+  ┃   ┝ 21-33 Set up talk (multi-store) 
+  ┃   ┝ 21-34 Daily sales status (multi-store) 
+  ┃   ┝ 21-40  
+  ┃   ┕ 21-41 Express Store Parameter Setup 
+  ┝ 22 [EG] STORE ANALYSIS MENU 
+  ┃   ┝ 22-01 [EH] ANALYZE MENU 
+  ┃   ┃   ┝ 22-01-01 SELECTED PRODUCTS 
+  ┃   ┃   ┝ 22-01-02 BY CLASS/MODULE/FINELINE 
+  ┃   ┃   ┝ 22-01-03 TOP OR BOTTOM SELLERS 
+  ┃   ┃   ┝ 22-01-04 BY STORE/CORP STATUS 
+  ┃   ┃   ┝ 22-01-05 BY GMROI 
+  ┃   ┃   ┝ 22-01-06 BY INVENTORY TURNS 
+  ┃   ┃   ┝ 22-01-07 AGAINST CAMPS STORES 
+  ┃   ┃   ┝ 22-01-08 PRODUCTS REQUIRING BC CHG 
+  ┃   ┃   ┝ 22-01-09 BY TREND 
+  ┃   ┃   ┝ 22-01-10 PRODUCT ADDS / DELETES 
+  ┃   ┃   ┝ 22-01-11 PLACING DEALS 
+  ┃   ┃   ┝ 22-01-12 PROMO DEALS 
+  ┃   ┃   ┝ 22-01-13 BY REGULAR MARGIN % 
+  ┃   ┃   ┝ 22-01-14 PRODUCTS BY HOLD CODE 
+  ┃   ┃   ┝ 22-01-15 STANDING ORDERS 
+  ┃   ┃   ┝ 22-01-16 IMPULSE ITEMS 
+  ┃   ┃   ┝ 22-01-17 MINIMUM ORDER POINTS 
+  ┃   ┃   ┝ 22-01-18 FOR OVERSTOCKED PRODUCTS 
+  ┃   ┃   ┝ 22-01-19 ANALYZE "FLOOR ONLY" PRODUCTS 
+  ┃   ┃   ┝ 22-01-20 BY FLAG (Z & S CODES) 
+  ┃   ┃   ┝ 22-01-21 LOST SALES 
+  ┃   ┃   ┝ 22-01-22 YEAR OVER YEAR SALES 
+  ┃   ┃   ┝ 22-01-23 MIN PACKS 
+  ┃   ┃   ┝ 22-01-24 PRODUCTS ON ORDER 
+  ┃   ┃   ┝ 22-01-25 BY FLOOR/WHSE LOCATION 
+  ┃   ┃   ┝ 22-01-26 BY SALES CURVE 
+  ┃   ┃   ┝ 22-01-27 BY MODULE 
+  ┃   ┃   ┝ 22-01-28 Compare store module/corp. module 
+  ┃   ┃   ┝ 22-01-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┕ 22-01-56 REVIEW RESULTS OF ANALYSIS 
+  ┃   ┝ 22-02 [EI] FILE MAINTENANCE 
+  ┃   ┃   ┝ 22-02-01 ADD/REMOVE ITEMS FROM CURVE USAGE 
+  ┃   ┃   ┝ 22-02-02 REMOVE 13P EST. IF < 13P REG SALES 
+  ┃   ┃   ┝ 22-02-03 RECALC AND UPDATE MIN O/P 
+  ┃   ┃   ┝ 22-02-04 CALC/LOAD DEALER STANDARD PACKS 
+  ┃   ┃   ┝ 22-02-05 ALIGN SALES CURVES TO BEST SELLER 
+  ┃   ┃   ┝ 22-02-06 CALCULATE ESTIMATES FROM CAMPS 
+  ┃   ┃   ┝ 22-02-07 ANALYZE DAILY SALES 
+  ┃   ┃   ┝ 22-02-08 ANALYZE STOCK OUTS 
+  ┃   ┃   ┝ 22-02-09 MASS CHANGE "FLOOR ONLY" INDICATOR 
+  ┃   ┃   ┝ 22-02-20 ORDER MAINT USER SECURITY 
+  ┃   ┃   ┝ 22-02-21 UPDATE STORE ANALYSIS PARAMETERS 
+  ┃   ┃   ┝ 22-02-22 Compare store module/corp. module 
+  ┃   ┃   ┝ 22-02-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┕ 22-02-56 REVIEW RESULTS 
+  ┃   ┝ 22-03 [EJ] REPORTS MENU 
+  ┃   ┃   ┝ 22-03-01 MERCHANDISING REPORT 
+  ┃   ┃   ┝ 22-03-02 DETAIL SALES ANALYSIS BY PRODUCT 
+  ┃   ┃   ┝ 22-03-03 13PER SALES/RECEIPT/CAMPS COMP RPT 
+  ┃   ┃   ┝ 22-03-04 PRICE CHECKER REPORT 
+  ┃   ┃   ┝ 22-03-05 INVENTORY TYPE/CAPACITY REPORT 
+  ┃   ┃   ┝ 22-03-06 ON ORDER REPORT 
+  ┃   ┃   ┝ 22-03-07 ADJUSTMENT HISTORY REPORT 
+  ┃   ┃   ┝ 22-03-08 RECEIPT INQ (PIECES AND $) BY DEPT 
+  ┃   ┃   ┝ 22-03-09 CHG ORD HLD TO "A" FOR DEPOT AVAIL 
+  ┃   ┃   ┝ 22-03-10 RETURNS ANALYSIS REPORT 
+  ┃   ┃   ┝ 22-03-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┕ 22-03-56 REVIEW RESULTS OF ANALYSIS 
+  ┃   ┝ 22-55 ANALYZE A SINGLE PRODUCT | PROGRAM: storeAnalysis
+  ┃   ┕ 22-56 REVIEW RESULTS OF ANALYSIS 
+  ┝ 23 [EK] MERCHANDISING MENU 
+  ┃   ┝ 23-01 Work with facility locations 
+  ┃   ┝ 23-02 Mass retail location change 
+  ┃   ┝ 23-03 Display corp. module data 
+  ┃   ┝ 23-04 Delete module by location 
+  ┃   ┝ 23-05 Load module data 
+  ┃   ┝ 23-06 Load module exceptions 
+  ┃   ┝ 23-08 FINELINE/RTL LOC XREF FILE MAINT 
+  ┃   ┝ 23-09 CREATE RTL LOC BY FINELINE 
+  ┃   ┝ 23-10 PRODUCT LOCATION XREF FILE MAINT 
+  ┃   ┝ 23-11 CREATE RTL LOC BY PRODUCT RANGE 
+  ┃   ┝ 23-12 CREATE WHSE LOC BY PRODUCT RANGE 
+  ┃   ┝ 23-13 BIN CAP MAINTENANCE-BY PRODUCT 
+  ┃   ┝ 23-14 BIN CAP MAINTENANCE-MASS 
+  ┃   ┝ 23-15 BIN CAP MAINTENANCE-BY MODULE/LOC 
+  ┃   ┝ 23-16 PICKING PARAMETER MAINTENANCE 
+  ┃   ┝ 23-17 LOCATION PARAMETERS CHANGE 
+  ┃   ┝ 23-18 MOVE BC FROM STOREL1 TO PRIM LOC 
+  ┃   ┝ 23-19 Select Corporate Module Data 
+  ┃   ┕ 23-55 ANALYZE A SINGLE PRODUCT 
+  ┝ 24 [EP] Parts Counter Menu 
+  ┃   ┝ 24-01 Parts Counter 
+  ┃   ┝ 24-02 Call Center 
+  ┃   ┝ 24-10 Customer/vehicle maintenance 
+  ┃   ┝ 24-11 Available Writers Maintenance 
+  ┃   ┝ 24-12 User ID maintenance 
+  ┃   ┝ 24-13 OEM Master file maintenance 
+  ┃   ┝ 24-14 Terms code maintenance 
+  ┃   ┝ 24-15 Price code maintenance 
+  ┃   ┝ 24-16 Salesperson maintenance 
+  ┃   ┝ 24-17 Competitor maintenance 
+  ┃   ┝ 24-18 No Sale reason code maintenence 
+  ┃   ┝ 24-19 Non-stock Product Suffix maint. 
+  ┃   ┝ 24-20 Invoice Register 
+  ┃   ┝ 24-21 Sales history report 
+  ┃   ┝ 24-22 Price Change Report 
+  ┃   ┝ 24-23 Process summarized invoices 
+  ┃   ┕ 24-30 Maintain Parts Counter Parameters 
+  ┝ 25 [AQ] APAP menu 
+  ┃   ┝ 25-01 Work with add/retain recomm 
+  ┃   ┝ 25-02 Work with deletion recomm 
+  ┃   ┝ 25-03 Work with products to send back 
+  ┃   ┕ 25-30 Work with APAP parameters 
+  ┝ 26 [AB] AIM menu 
+  ┃   ┝ 26-01 [AC] Product selection menu 
+  ┃   ┃   ┝ 26-01-01 AIM monitor schedule setup 
+  ┃   ┃   ┝ 26-01-02 AIM monitor immediate run 
+  ┃   ┃   ┝ 26-01-03  
+  ┃   ┃   ┝ 26-01-04 Work with management reports 
+  ┃   ┃   ┝ 26-01-05 [EG] Store analysis menu 
+  ┃   ┃   ┃   ┝ 26-01-05-01 [EH] ANALYZE MENU 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-01 SELECTED PRODUCTS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-02 BY CLASS/MODULE/FINELINE 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-03 TOP OR BOTTOM SELLERS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-04 BY STORE/CORP STATUS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-05 BY GMROI 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-06 BY INVENTORY TURNS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-07 AGAINST CAMPS STORES 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-08 PRODUCTS REQUIRING BC CHG 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-09 BY TREND 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-10 PRODUCT ADDS / DELETES 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-11 PLACING DEALS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-12 PROMO DEALS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-13 BY REGULAR MARGIN % 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-14 PRODUCTS BY HOLD CODE 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-15 STANDING ORDERS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-16 IMPULSE ITEMS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-17 MINIMUM ORDER POINTS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-18 FOR OVERSTOCKED PRODUCTS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-19 ANALYZE "FLOOR ONLY" PRODUCTS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-20 BY FLAG (Z & S CODES) 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-21 LOST SALES 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-22 YEAR OVER YEAR SALES 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-23 MIN PACKS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-24 PRODUCTS ON ORDER 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-25 BY FLOOR/WHSE LOCATION 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-26 BY SALES CURVE 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-27 BY MODULE 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-28 Compare store module/corp. module 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-01-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┃   ┃   ┕ 26-01-05-01-56 REVIEW RESULTS OF ANALYSIS 
+  ┃   ┃   ┃   ┝ 26-01-05-02 [EI] FILE MAINTENANCE 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-01 ADD/REMOVE ITEMS FROM CURVE USAGE 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-02 REMOVE 13P EST. IF < 13P REG SALES 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-03 RECALC AND UPDATE MIN O/P 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-04 CALC/LOAD DEALER STANDARD PACKS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-05 ALIGN SALES CURVES TO BEST SELLER 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-06 CALCULATE ESTIMATES FROM CAMPS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-07 ANALYZE DAILY SALES 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-08 ANALYZE STOCK OUTS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-09 MASS CHANGE "FLOOR ONLY" INDICATOR 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-20 ORDER MAINT USER SECURITY 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-21 UPDATE STORE ANALYSIS PARAMETERS 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-22 Compare store module/corp. module 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-02-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┃   ┃   ┕ 26-01-05-02-56 REVIEW RESULTS 
+  ┃   ┃   ┃   ┝ 26-01-05-03 [EJ] REPORTS MENU 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-01 MERCHANDISING REPORT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-02 DETAIL SALES ANALYSIS BY PRODUCT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-03 13PER SALES/RECEIPT/CAMPS COMP RPT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-04 PRICE CHECKER REPORT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-05 INVENTORY TYPE/CAPACITY REPORT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-06 ON ORDER REPORT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-07 ADJUSTMENT HISTORY REPORT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-08 RECEIPT INQ (PIECES AND $) BY DEPT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-09 CHG ORD HLD TO "A" FOR DEPOT AVAIL 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-10 RETURNS ANALYSIS REPORT 
+  ┃   ┃   ┃   ┃   ┝ 26-01-05-03-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┃   ┃   ┕ 26-01-05-03-56 REVIEW RESULTS OF ANALYSIS 
+  ┃   ┃   ┃   ┝ 26-01-05-55 ANALYZE A SINGLE PRODUCT | PROGRAM: storeAnalysis
+  ┃   ┃   ┃   ┕ 26-01-05-56 REVIEW RESULTS OF ANALYSIS 
+  ┃   ┃   ┝ 26-01-06 Work with invoices 
+  ┃   ┃   ┝ 26-01-07 Inventory manager's inquiry 
+  ┃   ┃   ┝ 26-01-08  
+  ┃   ┃   ┝ 26-01-09 Add product to a strategy 
+  ┃   ┃   ┕ 26-01-10 Remove product from strategy 
+  ┃   ┝ 26-02 Work with review list 
+  ┃   ┝ 26-03 Work with master deals 
+  ┃   ┝ 26-04 Print deferred product list 
+  ┃   ┝ 26-05  
+  ┃   ┝ 26-06 Work with deals 
+  ┃   ┝ 26-07 [ES] Signage menu 
+  ┃   ┃   ┝ 26-07-01 Work with signage by deal 
+  ┃   ┃   ┝ 26-07-02 Work with signage by deal changes 
+  ┃   ┃   ┝ 26-07-03 Work w signage deal tear-down 
+  ┃   ┃   ┝ 26-07-04 Work with signage by product 
+  ┃   ┃   ┝ 26-07-05 Work with signage by price change 
+  ┃   ┃   ┝ 26-07-06 Work with signage by receipt 
+  ┃   ┃   ┝ 26-07-07 RF signage request 
+  ┃   ┃   ┝ 26-07-08 Work with free format signage 
+  ┃   ┃   ┝ 26-07-09  
+  ┃   ┃   ┝ 26-07-10 Work with x-series 
+  ┃   ┃   ┝ 26-07-20 Work with signage batches 
+  ┃   ┃   ┝ 26-07-30 Work with signage product defaults 
+  ┃   ┃   ┝ 26-07-31 Work with signage store defaults 
+  ┃   ┃   ┝ 26-07-33 Delete signage by product 
+  ┃   ┃   ┝ 26-07-39  
+  ┃   ┃   ┝ 26-07-40 Start signage printer 
+  ┃   ┃   ┝ 26-07-41 Work with signage output queue 
+  ┃   ┃   ┝ 26-07-42 Work with signage printers 
+  ┃   ┃   ┕ 26-07-43 Work with signage workstations 
+  ┃   ┝ 26-08 [BS] Price changes menu 
+  ┃   ┃   ┝ 26-08-01 Work with product prices | PROGRAM: workWithProductPrices
+  ┃   ┃   ┝ 26-08-02 Display pending price changes | PROGRAM: workWithPendingPriceChangesMainMenu
+  ┃   ┃   ┝ 26-08-03 Send price changes to registers | PROGRAM: selectFrontendPriceChangeOption
+  ┃   ┃   ┝ 26-08-04 Work with env fee link changes 
+  ┃   ┃   ┝ 26-08-09  
+  ┃   ┃   ┝ 26-08-10 Print lbls/tkts for price changes 
+  ┃   ┃   ┝ 26-08-11 Manual price tickets 
+  ┃   ┃   ┝ 26-08-12 Print bin labels by deal 
+  ┃   ┃   ┝ 26-08-19  
+  ┃   ┃   ┕ 26-08-20 [DB] Signage menu 
+  ┃   ┃   ┃   ┝ 26-08-20-01 Create promotional signs 
+  ┃   ┃   ┃   ┝ 26-08-20-02 Print promotional signs (no GST) 
+  ┃   ┃   ┃   ┝ 26-08-20-03 Print promotional signs (with GST) 
+  ┃   ┃   ┃   ┝ 26-08-20-04 Reprint maintenance 
+  ┃   ┃   ┃   ┝ 26-08-20-09  
+  ┃   ┃   ┃   ┝ 26-08-20-10 Product description maintenance 
+  ┃   ┃   ┃   ┝ 26-08-20-11 List product description file 
+  ┃   ┃   ┃   ┝ 26-08-20-19  
+  ┃   ┃   ┃   ┕ 26-08-20-20 Free-format signs 
+  ┃   ┝ 26-09 [EG] Store analysis menu 
+  ┃   ┃   ┝ 26-09-01 [EH] ANALYZE MENU 
+  ┃   ┃   ┃   ┝ 26-09-01-01 SELECTED PRODUCTS 
+  ┃   ┃   ┃   ┝ 26-09-01-02 BY CLASS/MODULE/FINELINE 
+  ┃   ┃   ┃   ┝ 26-09-01-03 TOP OR BOTTOM SELLERS 
+  ┃   ┃   ┃   ┝ 26-09-01-04 BY STORE/CORP STATUS 
+  ┃   ┃   ┃   ┝ 26-09-01-05 BY GMROI 
+  ┃   ┃   ┃   ┝ 26-09-01-06 BY INVENTORY TURNS 
+  ┃   ┃   ┃   ┝ 26-09-01-07 AGAINST CAMPS STORES 
+  ┃   ┃   ┃   ┝ 26-09-01-08 PRODUCTS REQUIRING BC CHG 
+  ┃   ┃   ┃   ┝ 26-09-01-09 BY TREND 
+  ┃   ┃   ┃   ┝ 26-09-01-10 PRODUCT ADDS / DELETES 
+  ┃   ┃   ┃   ┝ 26-09-01-11 PLACING DEALS 
+  ┃   ┃   ┃   ┝ 26-09-01-12 PROMO DEALS 
+  ┃   ┃   ┃   ┝ 26-09-01-13 BY REGULAR MARGIN % 
+  ┃   ┃   ┃   ┝ 26-09-01-14 PRODUCTS BY HOLD CODE 
+  ┃   ┃   ┃   ┝ 26-09-01-15 STANDING ORDERS 
+  ┃   ┃   ┃   ┝ 26-09-01-16 IMPULSE ITEMS 
+  ┃   ┃   ┃   ┝ 26-09-01-17 MINIMUM ORDER POINTS 
+  ┃   ┃   ┃   ┝ 26-09-01-18 FOR OVERSTOCKED PRODUCTS 
+  ┃   ┃   ┃   ┝ 26-09-01-19 ANALYZE "FLOOR ONLY" PRODUCTS 
+  ┃   ┃   ┃   ┝ 26-09-01-20 BY FLAG (Z & S CODES) 
+  ┃   ┃   ┃   ┝ 26-09-01-21 LOST SALES 
+  ┃   ┃   ┃   ┝ 26-09-01-22 YEAR OVER YEAR SALES 
+  ┃   ┃   ┃   ┝ 26-09-01-23 MIN PACKS 
+  ┃   ┃   ┃   ┝ 26-09-01-24 PRODUCTS ON ORDER 
+  ┃   ┃   ┃   ┝ 26-09-01-25 BY FLOOR/WHSE LOCATION 
+  ┃   ┃   ┃   ┝ 26-09-01-26 BY SALES CURVE 
+  ┃   ┃   ┃   ┝ 26-09-01-27 BY MODULE 
+  ┃   ┃   ┃   ┝ 26-09-01-28 Compare store module/corp. module 
+  ┃   ┃   ┃   ┝ 26-09-01-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┃   ┕ 26-09-01-56 REVIEW RESULTS OF ANALYSIS 
+  ┃   ┃   ┝ 26-09-02 [EI] FILE MAINTENANCE 
+  ┃   ┃   ┃   ┝ 26-09-02-01 ADD/REMOVE ITEMS FROM CURVE USAGE 
+  ┃   ┃   ┃   ┝ 26-09-02-02 REMOVE 13P EST. IF < 13P REG SALES 
+  ┃   ┃   ┃   ┝ 26-09-02-03 RECALC AND UPDATE MIN O/P 
+  ┃   ┃   ┃   ┝ 26-09-02-04 CALC/LOAD DEALER STANDARD PACKS 
+  ┃   ┃   ┃   ┝ 26-09-02-05 ALIGN SALES CURVES TO BEST SELLER 
+  ┃   ┃   ┃   ┝ 26-09-02-06 CALCULATE ESTIMATES FROM CAMPS 
+  ┃   ┃   ┃   ┝ 26-09-02-07 ANALYZE DAILY SALES 
+  ┃   ┃   ┃   ┝ 26-09-02-08 ANALYZE STOCK OUTS 
+  ┃   ┃   ┃   ┝ 26-09-02-09 MASS CHANGE "FLOOR ONLY" INDICATOR 
+  ┃   ┃   ┃   ┝ 26-09-02-20 ORDER MAINT USER SECURITY 
+  ┃   ┃   ┃   ┝ 26-09-02-21 UPDATE STORE ANALYSIS PARAMETERS 
+  ┃   ┃   ┃   ┝ 26-09-02-22 Compare store module/corp. module 
+  ┃   ┃   ┃   ┝ 26-09-02-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┃   ┕ 26-09-02-56 REVIEW RESULTS 
+  ┃   ┃   ┝ 26-09-03 [EJ] REPORTS MENU 
+  ┃   ┃   ┃   ┝ 26-09-03-01 MERCHANDISING REPORT 
+  ┃   ┃   ┃   ┝ 26-09-03-02 DETAIL SALES ANALYSIS BY PRODUCT 
+  ┃   ┃   ┃   ┝ 26-09-03-03 13PER SALES/RECEIPT/CAMPS COMP RPT 
+  ┃   ┃   ┃   ┝ 26-09-03-04 PRICE CHECKER REPORT 
+  ┃   ┃   ┃   ┝ 26-09-03-05 INVENTORY TYPE/CAPACITY REPORT 
+  ┃   ┃   ┃   ┝ 26-09-03-06 ON ORDER REPORT 
+  ┃   ┃   ┃   ┝ 26-09-03-07 ADJUSTMENT HISTORY REPORT 
+  ┃   ┃   ┃   ┝ 26-09-03-08 RECEIPT INQ (PIECES AND $) BY DEPT 
+  ┃   ┃   ┃   ┝ 26-09-03-09 CHG ORD HLD TO "A" FOR DEPOT AVAIL 
+  ┃   ┃   ┃   ┝ 26-09-03-10 RETURNS ANALYSIS REPORT 
+  ┃   ┃   ┃   ┝ 26-09-03-55 ANALYZE A SINGLE PRODUCT 
+  ┃   ┃   ┃   ┕ 26-09-03-56 REVIEW RESULTS OF ANALYSIS 
+  ┃   ┃   ┝ 26-09-55 ANALYZE A SINGLE PRODUCT | PROGRAM: storeAnalysis
+  ┃   ┃   ┕ 26-09-56 REVIEW RESULTS OF ANALYSIS 
+  ┃   ┝ 26-10 Work with management reports 
+  ┃   ┝ 26-11  
+  ┃   ┝ 26-12  
+  ┃   ┝ 26-13  
+  ┃   ┝ 26-14  
+  ┃   ┝ 26-15  
+  ┃   ┝ 26-30 Work with general parameters 
+  ┃   ┝ 26-31 Work with clearance parameters 
+  ┃   ┝ 26-32 Work with product exclusion 
+  ┃   ┝ 26-33 Work with DWO hold codes 
+  ┃   ┝ 26-34 Work with deal merch codes 
+  ┃   ┝ 26-35 Work with user reference fields 
+  ┃   ┝ 26-36 Work with deal exclusion 
+  ┃   ┝ 26-37  
+  ┃   ┝ 26-40 Convert active deals 
+  ┃   ┕ 26-42  
+  ┝ 30 [ES] Signage menu 
+  ┃   ┝ 30-01 Work with signage by deal 
+  ┃   ┝ 30-02 Work with signage by deal changes 
+  ┃   ┝ 30-03 Work w signage deal tear-down 
+  ┃   ┝ 30-04 Work with signage by product 
+  ┃   ┝ 30-05 Work with signage by price change 
+  ┃   ┝ 30-06 Work with signage by receipt 
+  ┃   ┝ 30-07 RF signage request 
+  ┃   ┝ 30-08 Work with free format signage 
+  ┃   ┝ 30-09  
+  ┃   ┝ 30-10 Work with x-series 
+  ┃   ┝ 30-20 Work with signage batches 
+  ┃   ┝ 30-30 Work with signage product defaults 
+  ┃   ┝ 30-31 Work with signage store defaults 
+  ┃   ┝ 30-33 Delete signage by product 
+  ┃   ┝ 30-39  
+  ┃   ┝ 30-40 Start signage printer 
+  ┃   ┝ 30-41 Work with signage output queue 
+  ┃   ┝ 30-42 Work with signage printers 
+  ┃   ┕ 30-43 Work with signage workstations 
+  ┝ 33 [PE] Employee Purchase Menu 
+  ┃   ┝ 33-01 Staff Employee Purchase 
+  ┃   ┝ 33-02 Staff Purchase Update Log 
+  ┃   ┝ 33-03 Recover Staff Purchase Data 
+  ┃   ┝ 33-04 Staff Purchase History Purge 
+  ┃   ┕ 33-05 Maintain Staff Purchase Parm's 
+  ┝ 40 [PI] Fast Find Menu 
+  ┃   ┝ 40-01 Work with facility locations 
+  ┃   ┝ 40-02 Mass retail location change 
+  ┃   ┝ 40-03 Work with pick lists 
+  ┃   ┝ 40-04 Audit Reporting 
+  ┃   ┝ 40-05 Location History 
+  ┃   ┝ 40-06 Performance Metrics 
+  ┃   ┝ 40-10 [PF] RF Fast Find Menu 
+  ┃   ┃   ┝ 40-10-01 FF Locate product 
+  ┃   ┃   ┝ 40-10-02 FF Hole checker 
+  ┃   ┃   ┝ 40-10-03 Select pick list 
+  ┃   ┃   ┝ 40-10-04 Pick products 
+  ┃   ┃   ┕ 40-10-05 Fast Checker 
+  ┃   ┝ 40-14 FF Review Location Exceptions 
+  ┃   ┝ 40-15 Maintain Proactive Product Class 
+  ┃   ┝ 40-16 Maintain Proactive Triggers 
+  ┃   ┝ 40-17 Work with Proactive Dashboard 
+  ┃   ┕ 40-30 Fast Find parameters 
+  ┕ 41 [RI] Enhanced Reserve Inventory Menu 
+  ┃   ┝ 41-01 Work with ERI Maintenance 
+  ┃   ┝ 41-02 ERI Reporting 
+  ┃   ┕ 41-03 Costar Reporting 
